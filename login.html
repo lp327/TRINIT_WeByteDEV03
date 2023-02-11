@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>Farm House</title>
+<link rel="icon" type="images/x-icon" href="images/icon.jpg">
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Germinate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link href="css/mislider.css" rel="stylesheet" type="text/css" />
+<link href="css/mislider-custom.css" rel="stylesheet" type="text/css" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+    <script>
+		function foo() {
+   			 var name = document.forms.RegForm.Name.value;
+			 var regName = /\d+$/g;  
+			 if (name == "" || regName.test(name)) {
+                    window.alert("Please enter your name properly.");
+                    name.focus();
+                    return false;
+                   }
+			 var phone =
+                    document.forms.RegForm.Telephone.value;
+			 var regPhone=/^\d{10}$/; 
+			 if (phone == "" || !regPhone.test(phone)) {
+                    alert("Please enter valid phone number.");
+                    phone.focus();
+                    return false;
+                }
+			 var email = document.forms.RegForm.EMail.value;
+			 var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+			 if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                   }
+			 var password = document.forms.RegForm.Password.value;
+			 if (password == "") {
+                    alert("Please enter your password");
+                    password.focus();
+                    return false;
+                   } 
+ 
+                   if(password.length <8){
+                    alert("Password should be atleast 8 character long");
+                    password.focus();
+                    return false;
+ 
+                   }
+			 
+		}
+
+        function foo1() {
+			 var email = document.forms.RegForm.EMail1.value;
+			 var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+			 if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                   }
+			 
+		}
+	  </script>
+<body>
+    
+    <div class="shy-menu-panel">
+        <nav class="menu menu--horatio link-effect-8" id="link-effect-8">
+            <ul class="w3layouts_menu__list">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="#service">Services</a></li>
+                <li><a href="contact.html" target="_parent">Contact Us</a></li>
+                <li><a href="#">Farm Login</a></li>
+                <li><a href="#">Enthu Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container1" id="container1">
+        <div class="form-container1 sign-up-container1">
+            <form name="RegForm" onsubmit="return foo()" method="post">
+                <h1>Create Account</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="infield">
+                    <input type="text" placeholder="Name" name="Name"/>
+                    <label></label>
+                </div>
+                <!-- <div class="infield">
+                    <input type="text" placeholder="Mobile number" name="Telephone"/>
+                    <label></label>
+                </div> -->
+                <div class="infield">
+                    <input type="text" placeholder="Email" name="EMail"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" name="Password"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="text" placeholder="Are you a Farmer:YES/NO" name="Telephone"/>
+                    <label></label>
+                </div>
+                <input type="submit" value="send" name="Submit" />
+            </form>
+        </div>
+        <div class="form-container1 sign-in-container1">
+            <form name="login" onsubmit="return foo1()" method="post">
+                <h1>Sign in</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="infield">
+                    <input type="text" placeholder="Email" name="EMail1"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" name="Password"/>
+                    <label></label>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <input type="submit" value="send" name="Submit" />
+            </form>
+        </div>
+        <div class="overlay-container1" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome!</h1>
+                    <p>To continue with please login</p>
+                    <button>Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Good day!</h1>
+                    <p>Join to the green farm nation</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <button id="overlayBtn"></button>
+        </div>
+    </div>
+
+    <script>
+        const container1 =document.getElementById('container1');
+        const overlayCon= document.getElementById('overlayCon');
+        const overlayBtn = document.getElementById('overlayBtn');
+        overlayBtn.addEventListener('click', ()=>{
+            container1.classList.toggle('right-panel-active');
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame(()=>{
+                overlayBtn.classList.add('btnScaled');
+            })
+        })
+    </script>
+
+</body>
+</html>
